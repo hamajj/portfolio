@@ -1,32 +1,39 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mehmet Hamza | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terminal Portfolio</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="terminal" id="terminal">
-        <div class="line">Welcome to <strong>Mehmet Hamza's Portfolio</strong></div>
-        <div class="line">Type <span class="prompt">help</span> to see available commands...</div>
-
-        <div class="section-title">About Me</div>
-        <div class="line">Hi! I'm Mehmet Hamza, a passionate developer who loves Linux, coding, and building cool stuff.</div>
-
-        <div class="section-title">Skills</div>
-        <div class="line">- C / C++ / Python</div>
-        <div class="line">- Linux / Terminal Tools</div>
-        <div class="line">- Game Dev / Raylib</div>
-
-        <div class="section-title">Projects</div>
-        <div class="line">1. <a href="#">Custom Minecraft Launcher</a></div>
-        <div class="line">2. <a href="#">Lexer & Compiler in C++</a></div>
-        <div class="line">3. <a href="#">Raylib 3D Graphics Experiments</a></div>
-
-        <div class="line" style="margin-top:30px;">Feel free to explore and contact me!</div>
+<div id="terminal">
+    <div id="output">
+        <pre class="ascii-art">
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡤⠴⠒⠒⠒⠶⢤⣄⡀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⣠⠞⠁⠀⠀⠀⠀⠀⠀⠀⠈⠙⢦⡀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⡼⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢳⡀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢸⠁⠀⠀⣠⠖⠛⠛⠲⢤⠀⠀⠀⣰⠚⠛⢷⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⣿⠀⠀⣸⠃⠀⠀⢀⣀⠈⢧⣠⣤⣯⢠⣤⠘⣆⠀⠀⠀
+⠀⠀⠀⠀⠀⣿⠀⠀⡇⠀⠀⠀⠻⠟⠠⣏⣀⣀⣨⡇⠉⢀⣿⠀⠀⠀
+⠀⠀⠀⠀⢀⡟⠀⠀⠹⡄⠀⠀⠀⠀⠀⠉⠑⠚⠉⠀⣠⡞⢿⠀⠀⠀
+⠀⠀⠀⢀⡼⠁⠀⠀⠀⠙⠳⢤⡄⠀⠀⠀⠀⠀⠀⠀⠁⠙⢦⠳⣄⠀
+⠀⠀⢀⡾⠁⠀⠀⠀⠀⠀⠤⣏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⠃⠙⡆
+⠀⠀⣼⠁⠀⠀⠀⠀⠀⠀⠀⠈⠳⣄⠀⠀⠀⠀⠀⠀⠀⢠⡏⠀⠀⡇
+⠀⠀⣏⠀⠀⠀⠀⠲⣄⡀⠀⠀⠀⠸⡄⠀⠀⠀⠀⠀⠀⢸⠀⢀⡼⠁
+⢀⡴⢿⠀⠀⠀⠀⠀⢸⠟⢦⡀⠀⢀⡇⠀⠀⠀⠀⠀⠀⠘⠗⣿⠁⠀
+⠸⣦⡘⣦⠀⠀⠀⠀⣸⣄⠀⡉⠓⠚⠀⠀⠀⠀⠀⠀⠀⠀⡴⢹⣦⡀
+⠀⠀⠉⠛⠳⢤⣴⠾⠁⠈⠟⠉⣇⠀⠀⠀⠀⠀⠀⠀⣠⠞⠁⣠⠞⠁
+⠀⠀⠀⠀⠀⠀⠙⢧⣀⠀⠀⣠⠏⠀⠀⢀⣀⣠⠴⠛⠓⠚⠋⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠉⠙⠋⠉⠉⠉⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀
+        </pre>
+        
     </div>
-
-    <script src="script.js"></script>
+    <div id="input-line">
+        <span class="prompt">~$</span>
+        <input type="text" id="input" autofocus autocomplete="off">
+    </div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>

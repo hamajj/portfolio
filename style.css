@@ -1,30 +1,56 @@
 body {
-    background-color: #000;
-    color: #33FF00;
-    font-family: 'Courier New', Courier, monospace;
     margin: 0;
-    padding: 0;
+    background: #000;
+    color: #33ff33;
+    font-family: 'Courier New', monospace;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.terminal {
-    padding: 20px;
+#terminal {
+    width: 80%;
+    max-width: 900px;
+    height: 80%;
+    border: 2px solid #33ff33;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow-y: auto;
+    background: #000;
+}
+
+#output {
+    flex: 1;
 }
 
 .line {
-    margin: 5px 0;
+    margin: 2px 0;
+}
+
+.ascii-art {
+    color: #ff33cc;
+    font-weight: bold;
+}
+
+#input-line {
+    display: flex;
+    align-items: center;
 }
 
 .prompt {
-    color: #FF6600;
+    margin-right: 5px;
+    color: #33ffff;
 }
 
-.section-title {
-    color: #FF33CC;
-    margin-top: 20px;
+#input {
+    background: transparent;
+    border: none;
+    color: #33ff33;
+    outline: none;
+    flex: 1;
+    font-family: inherit;
+    font-size: 1em;
 }
-
-a {
-    color: #33FFFF;
-    text-decoration: none;
-}
-
