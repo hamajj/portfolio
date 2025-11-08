@@ -14,7 +14,6 @@ function printLine(text, delay = 0) {
     output.appendChild(line);
     output.scrollTop = output.scrollHeight;
 
-    // Split text by HTML tags and normal text
     const parts = text.split(/(<[^>]+>)/g);
     let partIndex = 0;
     let charIndex = 0;
@@ -24,12 +23,10 @@ function printLine(text, delay = 0) {
             const part = parts[partIndex];
 
             if (part.startsWith('<') && part.endsWith('>')) {
-                // HTML tag, append fully
                 line.innerHTML += part;
                 partIndex++;
                 setTimeout(typeChar, 0);
             } else {
-                // Normal text, append char by char
                 if (charIndex < part.length) {
                     line.innerHTML += part[charIndex];
                     charIndex++;
@@ -52,7 +49,6 @@ function printLine(text, delay = 0) {
     }
 }
 
-// Auto welcome message
 printLine('Welcome to my portfolio! Type "help" for commands.');
 
 input.addEventListener('keydown', function(e) {
