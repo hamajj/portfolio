@@ -3,7 +3,7 @@ const output = document.getElementById('output');
 
 const commands = {
     help: "Available commands:<br>about <br>projects <br>contact",
-    about: "Hi! My name is Mehmet Hamza Akca.<br>I'm a secondary school student passionate about coding and technology.<br>I'm interested in game development and low-level software engineering.<br>You can check out my projects through the <strong>projects</strong> command.",
+    about: "Hi! I'm Mehmet Hamza Akca.<br>A secondary school student obsessed with coding <br>I love game dev & low-level software engineering <br>Big fan of Linux & open-source <br>Type <strong>`projects`</strong> to see what I've built!",
     projects: "Projects:<br>Portfolio: https://github.com/hamajj/portfolio <br>Sorting Visualizer: https://github.com/hamajj/sortingvisualizer <br>teditor: https://github.com/hamajj/teditor<br>procman: https://github.com/hamajj/procman<br><br>More projects coming soon!",
     contact: "You can reach me at: mehmethamzaakca@tutamail.com<br>Or find me on GitHub: https://github.com/hamajj"
 };
@@ -49,7 +49,7 @@ function printLine(text, delay = 0) {
     }
 }
 
-printLine('Welcome to my portfolio! Type "help" for commands.');
+printLine('Welcome to my portfolio! Type <strong>`help`</strong> for commands.');
 
 input.addEventListener('keydown', function(e) {
     if (e.key === 'Enter') {
