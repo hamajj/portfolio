@@ -7,12 +7,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: x-large;
 }
 
 #terminal {
-    width: 80%;
-    max-width: 900px;
-    height: 80%;
+    width: 95%;
+    height: 95%;
     border: 2px solid #33ff33;
     padding: 10px;
     display: flex;
@@ -31,7 +31,7 @@ body {
 }
 
 .ascii-art {
-    color: #ff33cc;
+    color: #fff395;
     font-weight: bold;
 }
 
