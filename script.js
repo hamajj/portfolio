@@ -5,7 +5,8 @@ const commands = {
     help: "Available commands:<br>about <br>projects <br>contact",
     about: "Hi! I'm Mehmet Hamza Akca.<br>A secondary school student obsessed with coding <br>I love game dev & low-level software engineering <br>Big fan of Linux & open-source <br>Type <strong>`projects`</strong> to see what I've built!",
     projects: "Projects:<br>Portfolio: https://github.com/hamajj/portfolio <br>Sorting Visualizer: https://github.com/hamajj/sortingvisualizer <br>teditor: https://github.com/hamajj/teditor<br>procman: https://github.com/hamajj/procman<br><br>More projects coming soon!",
-    contact: "You can reach me at: mehmethamzaakca@tutamail.com<br>Or find me on GitHub: https://github.com/hamajj"
+    contact: "You can reach me at: mehmethamzaakca@tutamail.com<br>Or find me on GitHub: https://github.com/hamajj",
+    deno: "Professional Cheater"
 };
 
 function printLine(text, delay = 0) {
